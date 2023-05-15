@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>TIME CONVERTER</title>
+  </head>
+  <body>
+  	<center>
+	<br><br><br><h1>TIME CONVERTER</h1><br><br><br>
+	<p>Day(/s):</p>
+    <input type="text" id="value1" placeholder="enter your value in days."><br>
+    <input type="submit" value="seconds" onclick="secs()">
+    <input type="submit" value="minutes" onclick="mins()">
+    <input type="submit" value="hours" onclick="hrs()"><br>
+    <p id="id1"></p>
+    <script>
+
+    function secs() {
+      var num1 = document.getElementById('value1').value;
+      var num2 = 86400
+      var sec = num1 * num2;
+      document.getElementById('id1').innerHTML = sec;
+    }
+    function mins() {
+      var num1 = document.getElementById('value1').value;
+      var num2 = 1440
+      var min = num1 * num2;
+      document.getElementById('id1').innerHTML = min;
+    }
+    function hrs() {
+      var num1 = document.getElementById('value1').value;
+      var num2 = 24
+      var hr = num1 * num2;
+      document.getElementById('id1').innerHTML = hr;
+    }
+    </script>
+</body>
+</html>
